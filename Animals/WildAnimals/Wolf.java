@@ -24,4 +24,10 @@ public class Wolf extends WildAnimal implements Leader {
         System.out.println("");
     }
 
+    @Override
+    public String toString() {
+        return String.format(
+                "Tiger -> height: %2.1f, weight: %2.1f, eyeColor: %s, habitat: %s, dateOfLocation: %s, lead: %b",
+                height, weight, eyeColor, habitat, dateOfLocation, lead);
+    }
 }

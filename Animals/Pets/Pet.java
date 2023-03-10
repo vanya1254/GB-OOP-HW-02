@@ -9,7 +9,7 @@ public abstract class Pet extends Animal implements Affection {
     protected String color;
     protected String dateOfBirth;
 
-    public Pet(Double height, Double weight, String eyeColor, String name, String breed, Boolean vaccine, String color,
+    protected Pet(Double height, Double weight, String eyeColor, String name, String breed, Boolean vaccine, String color,
             String dateOfBirth) {
         super(height, weight, eyeColor);
         this.name = name;

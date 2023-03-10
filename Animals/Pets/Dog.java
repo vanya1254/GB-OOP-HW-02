@@ -26,4 +26,11 @@ public class Dog extends Pet implements Training {
     public void training() {
         System.out.println("");
     }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "Dog -> height: %2.1f, weight: %2.1f, eyeColor: %s, name: %s, breed: %s, vaccine: %b, color: %s, dateOfBirth: %s",
+                height, weight, eyeColor, name, breed, vaccine, color, dateOfBirth);
+    }
 }

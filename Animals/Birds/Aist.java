@@ -20,4 +20,11 @@ public class Aist extends Bird {
     public void info() {
         System.out.println("");
     }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "Aist -> height: %2.1f, weight: %2.1f, eyeColor: %s, flightAltitude: %s",
+                height, weight, eyeColor, flightAltitude);
+    }
 }

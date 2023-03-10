@@ -15,4 +15,11 @@ public class Tiger extends WildAnimal {
     public void info() {
         System.out.println("");
     }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "Tiger -> height: %2.1f, weight: %2.1f, eyeColor: %s, habitat: %s, dateOfLocation: %s",
+                height, weight, eyeColor, habitat, dateOfLocation);
+    }
 }
