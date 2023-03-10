@@ -1,6 +1,6 @@
 package Animals.Pets;
 
-public class Dog extends Pet {
+public class Dog extends Pet implements Training {
 
     public Dog(Double height, Double weight, String eyeColor, String name, String breed, Boolean vaccine, String color,
             String dateOfBirth) {
@@ -19,6 +19,11 @@ public class Dog extends Pet {
 
     @Override
     public void info() {
+        System.out.println("");
+    }
+
+    @Override
+    public void training() {
         System.out.println("");
     }
 }
