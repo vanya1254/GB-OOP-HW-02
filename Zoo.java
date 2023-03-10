@@ -23,6 +23,30 @@ public class Zoo {
         zoo.add(beast);
     }
 
+    void removeAnimal(int index) {
+        zoo.remove(index);
+    }
+
+    void getInfoAnimal(int index) {
+        zoo.get(index).info();
+    }
+
+    void getSoundAnimal(int index) {
+        zoo.get(index).makeSound();
+    }
+
+    void getInfoAll() {
+        for (Animal animal : zoo) {
+            animal.info();
+        }
+    }
+
+    void getSoundAll() {
+        for (Animal animal : zoo) {
+            animal.makeSound();
+        }
+    }
+
     public ArrayList<Animal> getZoo() {
         return zoo;
     }
