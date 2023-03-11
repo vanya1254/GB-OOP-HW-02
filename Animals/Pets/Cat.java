@@ -11,22 +11,27 @@ public class Cat extends Pet implements Wool {
 
     @Override
     public void showAffection() {
-        System.out.println("");
+        System.out.println("Purr, purr i`m going to lie here\n");
     }
 
     @Override
     public void makeSound() {
-        System.out.println("");
+        System.out.println("Meow, meow\n");
     }
 
     @Override
     public void info() {
-        System.out.println("");
+        System.out.printf(
+                "\nCat:\nheight: %2.1f, weight: %2.1f, eyeColor: %s, name: %s, breed: %s, vaccine: %b, color: %s, dateOfBirth: %s\n",
+                height, weight, eyeColor, name, breed, vaccine, color, dateOfBirth);
     }
-
+ 
     @Override
     public void presenceOfWool() {
-        System.out.printf("%b", wool);
+        if (wool)
+            System.out.println("\nI have wool!\n");
+        else
+            System.out.println("\nI am bald...\n");
     }
 
     @Override

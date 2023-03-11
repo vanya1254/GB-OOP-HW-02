@@ -1,3 +1,6 @@
+import Animals.Animal;
+import Animals.Pets.Cat;
+
 /**
  * На языке Java реализовать интерфейс "Животное" со следующими полями:
  * 1.Рост животного
@@ -75,6 +78,18 @@
 public class Program {
     public static void main(String[] args) {
         Zoo zoo = new Zoo();
+        System.out.println(zoo.getZoo());
+
+        zoo.getSoundAll();
+        zoo.getInfoAll();
+        zoo.getSpecMethodsAll();
+
+
+        Animal cat1 = new Cat(null, null, null, null, null, null, null, null);
+        zoo.addAnimalToZoo(cat1);
+        System.out.println(zoo.getZoo());
+
+        zoo.removeAnimal(6);
         System.out.println(zoo.getZoo());
     }
 }

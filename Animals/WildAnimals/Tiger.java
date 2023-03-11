@@ -8,12 +8,14 @@ public class Tiger extends WildAnimal {
 
     @Override
     public void makeSound() {
-        System.out.println("");
+        System.out.println("Roar, roar\n");
     }
 
     @Override
     public void info() {
-        System.out.println("");
+        System.out.printf(
+                "\nTiger:\nheight: %2.1f, weight: %2.1f, eyeColor: %s, habitat: %s, dateOfLocation: %s\n",
+                height, weight, eyeColor, habitat, dateOfLocation);
     }
 
     @Override
